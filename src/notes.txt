@@ -1,0 +1,43 @@
+const nums = [1, 2, 3, 4, 5]
+const new = nums.map(function(num) {
+  return num * 2
+})
+
+
+---
+State no se actualiza directo
+Utilizamos setState
+
+---
+
+
+LIFECYCLE METHODS
+
+componentDidMount()
+  GET the data I need to correctly display
+---
+shouldComponentUpdate(nextProps, nextState)
+  return true if want it to update
+  return false if not
+---
+componentWillUnmount()
+  teardown or cleanup your code before your component disappears
+  (e.g. remove event listeners)
+---
+componentDidUpdate
+
+
+NEW LIFECYCLE METHODS
+
+static getDerivedStateFromProps(props, state) {
+  return the new, updated state based upon props
+}
+---
+getSnapshotBeforeUpdate()
+  creates backup of the current way things are
+
+
+
+
+
+CONDITIONAL RENDER
